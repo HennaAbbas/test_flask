@@ -1,4 +1,4 @@
-import server
+# import server
 import unittest
 import xmlrunner
 import helpers
@@ -6,7 +6,7 @@ import time
       
         # wow cant remember python
 
-class TestHelpers(unittest.TestCase):
+class Test_test_Helpers(unittest.TestCase):
     """unit tests: helper functions."""
 
     def test_is_person(self):
@@ -52,98 +52,98 @@ class TestHelpers(unittest.TestCase):
             
         self.assertEqual(helpers.wait(73), True)        
 
-class TestFlaskRoutes(unittest.TestCase):
-    """Test Flask routes."""
+# class TestFlaskRoutes(unittest.TestCase):
+#     """Test Flask routes."""
 
-    def test_index(self):
-        """Make sure index page returns correct HTML."""
+#     def test_index(self):
+#         """Make sure index page returns correct HTML."""
 
-        # Create a test client
-        client = server.app.test_client()
-        server.app.config['TESTING'] = True
+#         # Create a test client
+#         client = server.app.test_client()
+#         server.app.config['TESTING'] = True
 
-            # Use the test client to make requests
-        result = client.get('/')
+#             # Use the test client to make requests
+#         result = client.get('/')
 
-        # Compare result.data with assert method
-        self.assertIn(b'<h1>Welcome</h1>', result.data)
-#         self.assertIn(b'<h1>Bob</h1>', result.data)
-        self.assertEqual(result.status_code, 200)
+#         # Compare result.data with assert method
+#         self.assertIn(b'<h1>Welcome</h1>', result.data)
+# #         self.assertIn(b'<h1>Bob</h1>', result.data)
+#         self.assertEqual(result.status_code, 200)
 
-    def test_form(self):
-        """Test that / route processes form data correctly."""
+#     def test_form(self):
+#         """Test that / route processes form data correctly."""
 
-        client = server.app.test_client()
-        server.app.config['TESTING'] = True
-        result = client.post('/', data={'person': 'Henna'})
-        self.assertIn(b'Henna', result.data)  
-        self.assertEqual(result.status_code, 200)
+#         client = server.app.test_client()
+#         server.app.config['TESTING'] = True
+#         result = client.post('/', data={'person': 'Henna'})
+#         self.assertIn(b'Henna', result.data)  
+#         self.assertEqual(result.status_code, 200)
 
-    def test_test(self):
-        """Test that / route processes form data correctly."""
+#     def test_test(self):
+#         """Test that / route processes form data correctly."""
 
-        client = server.app.test_client()
-        server.app.config['TESTING'] = True
-        result = client.post('/', data={'person': 'Henna'})
-        self.assertIn(b'Henna', result.data)  
-        self.assertEqual(result.status_code, 200)  
+#         client = server.app.test_client()
+#         server.app.config['TESTING'] = True
+#         result = client.post('/', data={'person': 'Henna'})
+#         self.assertIn(b'Henna', result.data)  
+#         self.assertEqual(result.status_code, 200)  
 
-    def fake_test(self):
-        """Test that / route processes form data correctly."""
+#     def fake_test(self):
+#         """Test that / route processes form data correctly."""
 
-        client = server.app.test_client()
-        server.app.config['TESTING'] = True
-        result = client.post('/', data={'person': 'Henna'})
-        self.assertIn(b'Henna', result.data)  
-        self.assertEqual(result.status_code, 200)
+#         client = server.app.test_client()
+#         server.app.config['TESTING'] = True
+#         result = client.post('/', data={'person': 'Henna'})
+#         self.assertIn(b'Henna', result.data)  
+#         self.assertEqual(result.status_code, 200)
         
         
-    def A(self):
-        """Make sure index page returns correct HTML."""
+#     def A(self):
+#         """Make sure index page returns correct HTML."""
 
-        # Create a test client
-        client = server.app.test_client()
-        server.app.config['TESTING'] = True
+#         # Create a test client
+#         client = server.app.test_client()
+#         server.app.config['TESTING'] = True
 
-            # Use the test client to make requests
-        result = client.get('/')
+#             # Use the test client to make requests
+#         result = client.get('/')
 
-        # Compare result.data with assert method
-        self.assertIn(b'<h1>Welcome</h1>', result.data)
-#         self.assertIn(b'<h1>Bob</h1>', result.data)
-        self.assertEqual(result.status_code, 200)
+#         # Compare result.data with assert method
+#         self.assertIn(b'<h1>Welcome</h1>', result.data)
+# #         self.assertIn(b'<h1>Bob</h1>', result.data)
+#         self.assertEqual(result.status_code, 200)
 
-    def B(self):
-        """Test that / route processes form data correctly."""
+#     def B(self):
+#         """Test that / route processes form data correctly."""
 
-        client = server.app.test_client()
-        server.app.config['TESTING'] = True
-        result = client.post('/', data={'person': 'Henna'})
-        self.assertIn(b'Henna', result.data)  
-        self.assertEqual(result.status_code, 200)
-    def Z(self):
-        """Make sure index page returns correct HTML."""
+#         client = server.app.test_client()
+#         server.app.config['TESTING'] = True
+#         result = client.post('/', data={'person': 'Henna'})
+#         self.assertIn(b'Henna', result.data)  
+#         self.assertEqual(result.status_code, 200)
+#     def Z(self):
+#         """Make sure index page returns correct HTML."""
 
-        # Create a test client
-        client = server.app.test_client()
-        server.app.config['TESTING'] = True
+#         # Create a test client
+#         client = server.app.test_client()
+#         server.app.config['TESTING'] = True
 
-            # Use the test client to make requests
-        result = client.get('/')
+#             # Use the test client to make requests
+#         result = client.get('/')
 
-        # Compare result.data with assert method
-        self.assertIn(b'<h1>Welcome</h1>', result.data)
-#         self.assertIn(b'<h1>Bob</h1>', result.data)
-        self.assertEqual(result.status_code, 200)
+#         # Compare result.data with assert method
+#         self.assertIn(b'<h1>Welcome</h1>', result.data)
+# #         self.assertIn(b'<h1>Bob</h1>', result.data)
+#         self.assertEqual(result.status_code, 200)
 
-    def D(self):
-        """Test that / route processes form data correctly."""
+#     def D(self):
+#         """Test that / route processes form data correctly."""
 
-        client = server.app.test_client()
-        server.app.config['TESTING'] = True
-        result = client.post('/', data={'person': 'Henna'})
-        self.assertIn(b'Henna', result.data)  
-        self.assertEqual(result.status_code, 200)
+#         client = server.app.test_client()
+#         server.app.config['TESTING'] = True
+#         result = client.post('/', data={'person': 'Henna'})
+#         self.assertIn(b'Henna', result.data)  
+#         self.assertEqual(result.status_code, 200)
           
 
 
